@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+    <title>Password Generator</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="password-box">
+            <input type="text" name="passwordtext" id="passwordtext" disabled>
+            <i class="uil uil-copy copy-icon"></i>
+        </div>
+
+        <div class="range-box">
+            <input type="range" name="range" max="30" min="6" value="8" id="range">
+            <span class="slider-number">8</span>
+        </div>
+
+    <button class="password-generator"> Generate Passsword </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- Code based on the original project by CodingNepal -->
+<!-- https://www.codingnepalweb.com/random-password-generator-html-javascript/ -->
