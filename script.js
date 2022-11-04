@@ -18,12 +18,12 @@ function generatePassword() {
     copyIcon.classList.replace("uil-file-check-alt", "uil-copy"); 
 }
 
-rangeInput.addEventListener("mouseup", () => {
+rangeInput.addEventListener("input", () => {
     sliderNumber.innerText = rangeInput.value;
     generatePassword();
 });
 
-generateButton.addEventListener("click",generatePassword());
+generateButton.addEventListener("click",generatePassword);
 
 copyIcon.addEventListener("click", () => {
     navigator.clipboard.writeText(passwordInput.value);
